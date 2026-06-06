@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Fix YouTube Volume",
+  "version": "1.6",
+  "description": "Fix YouTube's volume scaling to be logarithmic, making it scale with the way humans perceive audio.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "*://www.youtube.com/*"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube Volume Settings",
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

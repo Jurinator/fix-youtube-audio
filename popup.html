@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>YouTube Volume Settings</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+            font-variation-settings: "wdth" 100;
+            min-width: 220px;
+            padding: 10px;
+
+            background-color: #262222;
+            color: #ddd;
+        }
+
+        h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-top: 8px;
+            color: #ddd;
+        }
+
+        input[type="number"],
+        input[type="range"] {
+            width: 100%;
+            background-color: #1f1b1b;
+            border: 1px solid #B81C05;
+            color: #fff;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            background: #ff5722;
+        }
+
+        button {
+            margin-top: 10px;
+            width: 100%;
+            padding: 5px;
+            background-color: #B81C05;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #ff5722;
+        }
+
+        .header {
+            background-color: #B81C05;
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .header h3 {
+            margin: 0;
+            line-height: 32px;
+        }
+
+
+        input[type="range"] {
+            width: 100%;
+            height: 10px;
+            background: #3a3434;
+            border-radius: 5px;
+            border: 1px solid #B81C05;
+            outline: none;
+            margin-top: 4px;
+        }
+
+        /* FIREFOX */
+
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            background: #ff5722;
+            border-radius: 50%;
+            border: 2px solid #B81C05;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+
+        input[type="range"]::-moz-range-thumb:hover {
+            transform: scale(1.2);
+            background: #ff7043;
+        }
+
+        input[type="range"]::-moz-range-track {
+            height: 10px;
+            background: #3a3434;
+            border-radius: 5px;
+        }
+
+        input[type="range"]::-moz-range-progress {
+            background: #B81C05;
+            height: 10px;
+            border-radius: 5px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 32px;
+            height: auto;
+            /* aspct ratio*/
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-content">
+            <img src="icons/icon-96.png" alt="Logo" class="logo">
+            <h3>Log Volume Settings</h3>
+        </div>
+    </div>
+
+
+
+    <label>
+        Floor (min value):
+        <input type="number" id="floor" step="0.001" min="0" max="0.5">
+    </label>
+    <input type="range" id="floorRange" min="0" max="0.5" step="0.001">
+
+    <label>
+        Scale Factor:
+        <input type="number" id="scaleFactor" step="0.1" min="0.1" max="10">
+    </label>
+    <input type="range" id="scaleRange" min="0.1" max="10" step="0.1">
+
+    <button id="save">Save</button>
+    <button id="reset">Reset Defaults</button>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
