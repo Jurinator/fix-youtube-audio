@@ -3,9 +3,9 @@
 </p>
 
 
-Fix YouTube Volume — Logarithmic Volume Scaling for YouTube
+# Fix YouTube Volume — Logarithmic Volume Scaling for YouTube
 
-# Now open source!
+Available on the Mozilla add-ons page: https://addons.mozilla.org/en-US/firefox/addon/fix-youtube-volume/
 
 ---
 
