@@ -1,6 +1,7 @@
-<div style="display: flex; justify-content: center;">
-    <img src="https://raw.githubusercontent.com/Jurinator/fix-youtube-audio/main/icons/icon-96.png" alt="Logo">
-</div>
+<p align="center">
+    <img align="center" src="./icons/icon-96.png" height="100px" style="border-radius: 20px;"> 
+</p>
+
 
 Fix YouTube Volume — Logarithmic Volume Scaling for YouTube
 
