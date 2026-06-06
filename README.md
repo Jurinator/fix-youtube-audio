@@ -1,5 +1,5 @@
 
-<div style="text-align: center;"><img src="https://github.com/Jurinator/fix-youtube-audio/blob/main/icons/icon-96.png" /></div>
+<div style="text-align: center; width: 100%;"><img src="https://github.com/Jurinator/fix-youtube-audio/blob/main/icons/icon-96.png" /></div>
 
 Fix YouTube Volume — Logarithmic Volume Scaling for YouTube
 
